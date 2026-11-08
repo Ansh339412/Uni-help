@@ -1,4 +1,4 @@
-# Circlend
+# Uni-help
 
 Why buy something you’ll only need for a day? Circlend is a campus lending platform: students list what they aren’t using, and others borrow it through a verified handover and return.
 
