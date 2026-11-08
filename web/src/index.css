@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@theme {
+  --color-forest: #1d3a2a;
+  --color-moss: #2f5a41;
+  --color-ivory: #f7f3e8;
+  --color-paper: #fffdf6;
+  --color-fog: #8c8f88;
+  --color-line: #ddd8c8;
+  --font-display: "Newsreader", Georgia, serif;
+  --font-body: "Instrument Sans", system-ui, sans-serif;
+}
+body { @apply bg-ivory text-forest font-body antialiased; }
+input, select, textarea { @apply rounded-md border border-line bg-paper px-3 py-2 text-sm w-full; }
+button { @apply cursor-pointer; }
+:focus-visible { outline: 2px solid var(--color-moss); outline-offset: 2px; }

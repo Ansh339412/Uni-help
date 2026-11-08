@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: circlend-api
+    runtime: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - { key: DATABASE_URL, sync: false }
+      - { key: SUPABASE_URL, sync: false }
+      - { key: SUPABASE_JWT_SECRET, sync: false }
+      - { key: CLIENT_ORIGIN, sync: false }
+      - { key: ALLOWED_EMAIL_DOMAIN, sync: false }
